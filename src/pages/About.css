@@ -2664,7 +2664,7 @@
     justify-content: end;
     align-items: flex-start;
     font-family: 'Times New Roman', Times, serif;
-    font-size: 17.5px;
+    font-size: 16px;
     position: relative;
     top: 25px;
     right: 80px;
@@ -2703,7 +2703,7 @@
     align-items: flex-start;
     font-family: 'Times New Roman', Times, serif;
     font-size: 16px;
-    font-size: 17.5px;
+    font-size: 16px;
     position: relative;
     top: 25px;
     right: 125px;
@@ -2939,7 +2939,7 @@
     font-family: 'Times New Roman', Times, serif;
     border-bottom: 1.5px solid #f0b974;
     font-weight: bolder;
-    font-size: 21px;
+    font-size: 19.5px;
     color: black;
     text-align: center;
   }
@@ -3016,7 +3016,7 @@
     font-family: 'Times New Roman', Times, serif;
     border-bottom: 1.5px solid #f0b974;
     font-weight: bolder;
-    font-size: 21px;
+    font-size: 19.5px;
     color: black;
     text-align: center;
   }
