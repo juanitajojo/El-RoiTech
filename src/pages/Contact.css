@@ -8,7 +8,7 @@
     width: 100%;
     display: flex;
     flex-direction: column;
-   background-color: #f2c387;
+    background-color: #f2c387;
   }
 
   #holder {
@@ -335,11 +335,12 @@
     justify-content: space-between;
     align-items: center;
     background-color: rgba(255, 255, 255, 0.781);
-    border: 1.5px solid black;
+    border: 1px solid black;
     border-bottom-left-radius: 7px;
     border-bottom-right-radius: 7px;
     border-top-left-radius: 10px;
     border-top-right-radius: 25px;
+    
   }
 
   .jb {
@@ -884,7 +885,7 @@
     width: 100%;
     display: flex;
     flex-direction: column;
-   background-color: #f2c387;
+    background-color: #f2c387;
   }
 
   #holder {
@@ -1938,32 +1939,31 @@
     height: 25px;
   }
 
+
   .ac {
-    width: 600px;
+    width: 500px;
     height: 70px;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    background-color: transparent;
     justify-content: space-evenly;
     align-items: center;
   }
 
   .phone {
-    width: 590px;
+    width: 200px;
     height: 60px;
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    background-color: transparent;
   }
 
   .ph {
     width: 20px;
     height: 20px;
     gap: 10px;
-    padding: 10px 16px;
-    position: relative;
-    top: 13px;
-    right: 140px;
   }
 
   .ph img {
@@ -1972,7 +1972,7 @@
   }
 
   .number {
-    width: 570px;
+    width: 170px;
     height: 40px;
     color: black;
     display: flex;
@@ -1980,10 +1980,10 @@
     justify-content: end;
     align-items: flex-start;
     font-family: 'Times New Roman', Times, serif;
-    font-size: 16px;
+    font-size: 14px;
     position: relative;
-    top: 5px;
-    right: 110px;
+    top: 15px;
+    right: 125px;
   }
 
   .mail {
@@ -1999,10 +1999,7 @@
     width: 20px;
     height: 20px;
     gap: 10px;
-    padding: 10px 16px;
-    position: relative;
-    top: 10px;
-    right: 190px;
+
   }
 
   .ema img {
@@ -2019,10 +2016,10 @@
     justify-content: end;
     align-items: flex-start;
     font-family: 'Times New Roman', Times, serif;
-    font-size: 16px;
+    font-size: 14px;
     position: relative;
-    top: 3px;
-    right: 170px;
+    top: 15px;
+    right: 200px;
   }
 
   .bed {
@@ -2998,28 +2995,26 @@
     width: 600px;
     height: 70px;
     display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
+    flex-direction: row;
+    justify-content: center;
     align-items: center;
+    background-color: transparent;
   }
 
   .phone {
-    width: 590px;
+    width: 200px;
     height: 60px;
     display: flex;
     flex-direction: row;
     justify-content: center;
-    align-items: center;
+    align-items: start;
+    background-color: transparent;
   }
 
   .ph {
     width: 20px;
     height: 20px;
-    gap: 10px;
-    padding: 10px 16px;
-    position: relative;
-    top: 13px;
-    right: 140px;
+
   }
 
   .ph img {
@@ -3028,7 +3023,7 @@
   }
 
   .number {
-    width: 570px;
+    width: 180px;
     height: 40px;
     color: black;
     display: flex;
@@ -3036,10 +3031,10 @@
     justify-content: end;
     align-items: flex-start;
     font-family: 'Times New Roman', Times, serif;
-    font-size: 16px;
+    font-size: 17.5px;
     position: relative;
-    top: 5px;
-    right: 10px;
+    top: 25px;
+    right: 80px;
   }
 
   .mail {
@@ -3049,6 +3044,7 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    background-color: transparent;
   }
 
   .ema {
@@ -3056,9 +3052,7 @@
     height: 20px;
     gap: 10px;
     padding: 10px 16px;
-    position: relative;
-    top: 10px;
-    right: 190px;
+
   }
 
   .ema img {
@@ -3072,14 +3066,16 @@
     color: black;
     display: flex;
     flex-direction: column;
-    justify-content: end;
+    justify-content: center;
     align-items: flex-start;
     font-family: 'Times New Roman', Times, serif;
     font-size: 16px;
+    font-size: 17.5px;
     position: relative;
-    top: 3px;
-    right: 50px;
+    top: 25px;
+    right: 125px;
   }
+
 
   .bed {
     width: 100%;
@@ -4055,21 +4051,23 @@
   }
 
   .ac {
-    width: 600px;
+    width: 550px;
     height: 70px;
     display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
+    flex-direction: row;
+    justify-content: start;
     align-items: center;
+    background-color: transparent;
   }
 
   .phone {
-    width: 590px;
+    width: 200px;
     height: 60px;
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    background-color: transparent;
   }
 
   .ph {
@@ -4077,9 +4075,7 @@
     height: 20px;
     gap: 10px;
     padding: 10px 16px;
-    position: relative;
-    top: 13px;
-    right: -50px;
+
   }
 
   .ph img {
@@ -4088,7 +4084,7 @@
   }
 
   .number {
-    width: 570px;
+    width: 180px;
     height: 40px;
     color: black;
     display: flex;
@@ -4096,19 +4092,20 @@
     justify-content: end;
     align-items: flex-start;
     font-family: 'Times New Roman', Times, serif;
-    font-size: 16px;
+    font-size: 16.5px;
     position: relative;
-    top: 5px;
-    right: -40px;
+    top: 10px;
+    right: -50px;
   }
 
   .mail {
-    width: 290px;
+    width: 200px;
     height: 60px;
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    background-color: transparent;
   }
 
   .ema {
@@ -4127,7 +4124,7 @@
   }
 
   .google {
-    width: 260px;
+    width: 180px;
     height: 40px;
     color: black;
     display: flex;
@@ -4135,10 +4132,10 @@
     justify-content: end;
     align-items: flex-start;
     font-family: 'Times New Roman', Times, serif;
-    font-size: 16px;
+    font-size: 16.5px;
     position: relative;
-    top: 3px;
-    right: -30px;
+    top: 10px;
+    right: -5px;
   }
 
   .bed {
@@ -5129,21 +5126,23 @@
   }
 
   .ac {
-    width: 600px;
+    width: 400px;
     height: 70px;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
+    background-color: transparent;
   }
 
   .phone {
-    width: 310px;
+    width: 200px;
     height: 60px;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+    background-color: transparent;
   }
 
   .ph {
@@ -5170,19 +5169,20 @@
     justify-content: end;
     align-items: flex-start;
     font-family: 'Times New Roman', Times, serif;
-    font-size: 17px;
+    font-size: 17.5px;
     position: relative;
     top: 5px;
     left: 100px;
   }
 
   .mail {
-    width: 290px;
+    width: 200px;
     height: 60px;
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    background-color: transparent;
   }
 
   .ema {
@@ -5209,10 +5209,10 @@
     justify-content: end;
     align-items: flex-start;
     font-family: 'Times New Roman', Times, serif;
-    font-size: 17px;
+    font-size: 17.5px;
     position: relative;
     top: 5px;
-    left: 60px;
+    left: 20px;
   }
 
   .bed {
@@ -5942,7 +5942,17 @@
     align-items: center;
     font-family: 'Times New Roman', Times, serif;
     color: black;
+  transition: transform 0.3s ease;
   }
+.gg:hover{
+  transform: scale(0.9);
+  font-size: 16px;
+  font-weight: bold;
+  text-decoration: none;
+  background-color: black;
+  border: 1.5px solid #f0b974;
+  color: white;
+}
 
   .gh {
     width: 250px;
@@ -5990,8 +6000,17 @@
     align-items: center;
     font-family: 'Times New Roman', Times, serif;
     color: black;
+    transition: transform 0.3s ease;
   }
-
+.gj:hover{
+  transform: scale(0.9);
+  font-size: 16px;
+  font-weight: bold;
+  text-decoration: none;
+  background-color: black;
+  border: 1.5px solid #f0b974;
+  color: white;
+}
   .ga {
     width: 95%;
     height: 70px;

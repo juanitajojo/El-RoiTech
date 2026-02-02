@@ -423,7 +423,7 @@
     width: 300px;
     height: 50px;
     background-color: transparent;
-     display: flex;
+    display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: end;
@@ -435,23 +435,51 @@
 
   .ib {
     width: 100%;
-   height: 600px;
-   
-  background-color: rgba(255, 255, 255, 0.781);
-  display: grid;
- grid-template-columns: 120px 1fr 80px;
- grid-template-rows: 150px 220px 230px;
+    height: 600px;
 
-gap: 1px;
+    background-color: black;
+    display: grid;
+    grid-template-columns: 120px 1fr 80px;
+    grid-template-rows: 150px 220px 230px;
+
+    gap: 1px;
 
 
   }
 
+  @keyframes skake {
+    0% {
+      transform: translateX(0);
+    }
+
+    25% {
+      transform: translateX(-5px);
+    }
+
+    50% {
+      transform: translateX(5px);
+    }
+
+    75% {
+      transform: translateX(-5px);
+    }
+
+    100% {
+      transform: translateX(5px);
+    }
+  }
+
   .iba {
+    transition: transform 0.3s ease-in-out;
     background-image: url('../assets/tourism-wide.jpg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+  }
+
+  .iba:hover {
+    transform: scale(1.1);
+    animation: shake 0.5s cubic-bezier(.36, .07, .19, .97) infinite;
   }
 
   .ibb {
@@ -462,16 +490,29 @@ gap: 1px;
   }
 
   .ibc {
+    transition: transform 0.3s ease-in-out;
     background-image: url('../assets/uk.webp');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
   }
+
+  .ibc:hover {
+    transform: scale(1.1);
+    animation: shake 0.5s cubic-bezier(.36, .07, .19, .97) infinite;
+  }
+
   .ibd {
+    transition: transform 0.3s ease-in-out;
     background-image: url('../assets/paris-tower.jpg');
-   background-position: right;
+    background-position: right;
     background-repeat: no-repeat;
     background-size: cover;
+  }
+
+  .ibd:hover {
+    transform: scale(1.1);
+    animation: shake 0.5s cubic-bezier(.36, .07, .19, .97) infinite;
   }
 
   .ibe {
@@ -480,18 +521,31 @@ gap: 1px;
     background-repeat: no-repeat;
     background-size: cover;
   }
+
   .ibf {
+    transition: transform 0.3s ease-in-out;
     background-image: url('../assets/zuma-rock.jpeg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
   }
 
+  .ibf:hover {
+    transform: scale(1.1);
+    animation: shake 0.5s cubic-bezier(.36, .07, .19, .97) infinite;
+  }
+
   .ibg {
+    transition: transform 0.3s ease-in-out;
     background-image: url('../assets/wow.webp');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+  }
+
+  .ibg:hover {
+    transform: scale(1.1);
+    animation: shake 0.5s cubic-bezier(.36, .07, .19, .97) infinite;
   }
 
   .ibh {
@@ -502,12 +556,19 @@ gap: 1px;
   }
 
   .ibi {
+    transition: transform 0.3s ease-in-out;
     background-image: url('../assets/tour.jpeg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
   }
-.ground {
+
+  .ibi:hover {
+    transform: scale(1.1);
+    animation: shake 0.5s cubic-bezier(.36, .07, .19, .97) infinite;
+  }
+
+  .ground {
     max-width: 100%;
     height: 500px;
     background-color: white;
@@ -546,23 +607,26 @@ gap: 1px;
     justify-content: start;
     align-items: start;
   }
-.gca{
-  width: 300px;
-  height: 100px;
-  background-color: transparent;
-  display: flex;
+
+  .gca {
+    width: 300px;
+    height: 100px;
+    background-color: transparent;
+    display: flex;
     flex-direction: column;
     justify-content: start;
     align-items: start;
-   
-}
-.gca img {
-   position: relative;
+
+  }
+
+  .gca img {
+    position: relative;
     right: 60px;
     bottom: 10px;
-  width: 200px;
-  height: auto;
-}
+    width: 200px;
+    height: auto;
+  }
+
   .gda {
     width: 300px;
     height: 30px;
@@ -571,8 +635,8 @@ gap: 1px;
     flex-direction: row;
     justify-content: start;
     align-items: start;
-     position: relative;
-     top: 20px;
+    position: relative;
+    top: 20px;
     right: 40px;
   }
 
@@ -678,10 +742,10 @@ gap: 1px;
     width: 97%;
     height: 70px;
     background-color: transparent;
-      border-top: 1.5px solid #f2c387;
+    border-top: 1.5px solid #f2c387;
     color: black;
     font-size: 14px;
-    
+
     display: flex;
     flex-direction: column;
     justify-content: start;
@@ -1114,7 +1178,7 @@ gap: 1px;
     width: 400px;
     height: 50px;
     background-color: transparent;
-     display: flex;
+    display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -1127,22 +1191,50 @@ gap: 1px;
   .ib {
     width: 100%;
     height: 650px;
-     
-  background-color: rgba(255, 255, 255, 0.781);
-  display: grid;
- grid-template-columns: 130px 1fr 130px;
- grid-template-rows: 220px 220px 210px;
 
-gap: 1px;
+    background-color: black;
+    display: grid;
+    grid-template-columns: 130px 1fr 130px;
+    grid-template-rows: 220px 220px 210px;
+
+    gap: 1px;
 
 
   }
 
+  @keyframes skake {
+    0% {
+      transform: translateX(0);
+    }
+
+    25% {
+      transform: translateX(-5px);
+    }
+
+    50% {
+      transform: translateX(5px);
+    }
+
+    75% {
+      transform: translateX(-5px);
+    }
+
+    100% {
+      transform: translateX(5px);
+    }
+  }
+
   .iba {
+    transition: transform 0.3s ease-in-out;
     background-image: url('../assets/tourism-wide.jpg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+  }
+
+  .iba:hover {
+    transform: scale(1.1);
+    animation: shake 0.5s cubic-bezier(.36, .07, .19, .97) infinite;
   }
 
   .ibb {
@@ -1153,16 +1245,29 @@ gap: 1px;
   }
 
   .ibc {
+    transition: transform 0.3s ease-in-out;
     background-image: url('../assets/uk.webp');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
   }
+
+  .ibc:hover {
+    transform: scale(1.1);
+    animation: shake 0.5s cubic-bezier(.36, .07, .19, .97) infinite;
+  }
+
   .ibd {
+    transition: transform 0.3s ease-in-out;
     background-image: url('../assets/paris-tower.jpg');
-   background-position: right;
+    background-position: right;
     background-repeat: no-repeat;
     background-size: cover;
+  }
+
+  .ibd:hover {
+    transform: scale(1.1);
+    animation: shake 0.5s cubic-bezier(.36, .07, .19, .97) infinite;
   }
 
   .ibe {
@@ -1171,18 +1276,31 @@ gap: 1px;
     background-repeat: no-repeat;
     background-size: cover;
   }
+
   .ibf {
+    transition: transform 0.3s ease-in-out;
     background-image: url('../assets/zuma-rock.jpeg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
   }
 
+  .ibf:hover {
+    transform: scale(1.1);
+    animation: shake 0.5s cubic-bezier(.36, .07, .19, .97) infinite;
+  }
+
   .ibg {
+    transition: transform 0.3s ease-in-out;
     background-image: url('../assets/wow.webp');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+  }
+
+  .ibg:hover {
+    transform: scale(1.1);
+    animation: shake 0.5s cubic-bezier(.36, .07, .19, .97) infinite;
   }
 
   .ibh {
@@ -1192,11 +1310,17 @@ gap: 1px;
     background-size: cover;
   }
 
- .ibi {
+  .ibi {
+    transition: transform 0.3s ease-in-out;
     background-image: url('../assets/tour.jpeg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+  }
+
+  .ibi:hover {
+    transform: scale(1.1);
+    animation: shake 0.5s cubic-bezier(.36, .07, .19, .97) infinite;
   }
 
   .ground {
@@ -1238,23 +1362,26 @@ gap: 1px;
     justify-content: start;
     align-items: start;
   }
-.gca{
-  width: 300px;
-  height: 100px;
-  background-color: transparent;
-  display: flex;
+
+  .gca {
+    width: 300px;
+    height: 100px;
+    background-color: transparent;
+    display: flex;
     flex-direction: column;
     justify-content: start;
     align-items: start;
-   
-}
-.gca img {
-   position: relative;
+
+  }
+
+  .gca img {
+    position: relative;
     right: 120px;
     bottom: 10px;
-  width: 200px;
-  height: auto;
-}
+    width: 200px;
+    height: auto;
+  }
+
   .gda {
     width: 300px;
     height: 30px;
@@ -1263,8 +1390,8 @@ gap: 1px;
     flex-direction: row;
     justify-content: start;
     align-items: start;
-     position: relative;
-     top: 20px;
+    position: relative;
+    top: 20px;
     right: 100px;
   }
 
@@ -1370,10 +1497,10 @@ gap: 1px;
     width: 97%;
     height: 70px;
     background-color: transparent;
-      border-top: 1.5px solid #f2c387;
+    border-top: 1.5px solid #f2c387;
     color: black;
     font-size: 17px;
-    
+
     display: flex;
     flex-direction: column;
     justify-content: start;
@@ -1564,32 +1691,31 @@ gap: 1px;
     height: 25px;
   }
 
+
   .ac {
-    width: 600px;
+    width: 500px;
     height: 70px;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    background-color: transparent;
     justify-content: space-evenly;
     align-items: center;
   }
 
   .phone {
-    width: 590px;
+    width: 200px;
     height: 60px;
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    background-color: transparent;
   }
 
   .ph {
     width: 20px;
     height: 20px;
     gap: 10px;
-    padding: 10px 16px;
-    position: relative;
-    top: 13px;
-    right: 140px;
   }
 
   .ph img {
@@ -1598,7 +1724,7 @@ gap: 1px;
   }
 
   .number {
-    width: 570px;
+    width: 170px;
     height: 40px;
     color: black;
     display: flex;
@@ -1606,10 +1732,10 @@ gap: 1px;
     justify-content: end;
     align-items: flex-start;
     font-family: 'Times New Roman', Times, serif;
-    font-size: 16px;
+    font-size: 14px;
     position: relative;
-    top: 5px;
-    right: 110px;
+    top: 15px;
+    right: 125px;
   }
 
   .mail {
@@ -1625,10 +1751,7 @@ gap: 1px;
     width: 20px;
     height: 20px;
     gap: 10px;
-    padding: 10px 16px;
-    position: relative;
-    top: 10px;
-    right: 190px;
+
   }
 
   .ema img {
@@ -1645,10 +1768,10 @@ gap: 1px;
     justify-content: end;
     align-items: flex-start;
     font-family: 'Times New Roman', Times, serif;
-    font-size: 16px;
+    font-size: 14px;
     position: relative;
-    top: 3px;
-    right: 170px;
+    top: 15px;
+    right: 200px;
   }
 
   .bed {
@@ -2003,7 +2126,7 @@ gap: 1px;
     width: 500px;
     height: 50px;
     background-color: transparent;
-     display: flex;
+    display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -2016,22 +2139,50 @@ gap: 1px;
   .ib {
     width: 100%;
     height: 650px;
-     
-  background-color: rgba(255, 255, 255, 0.781);
-  display: grid;
- grid-template-columns: 150px 1fr 150px;
- grid-template-rows: 210px 220px 220px;
 
-gap: 1px;
+    background-color: black;
+    display: grid;
+    grid-template-columns: 150px 1fr 150px;
+    grid-template-rows: 210px 220px 220px;
+
+    gap: 1px;
 
 
   }
 
+  @keyframes skake {
+    0% {
+      transform: translateX(0);
+    }
+
+    25% {
+      transform: translateX(-5px);
+    }
+
+    50% {
+      transform: translateX(5px);
+    }
+
+    75% {
+      transform: translateX(-5px);
+    }
+
+    100% {
+      transform: translateX(5px);
+    }
+  }
+
   .iba {
+    transition: transform 0.3s ease-in-out;
     background-image: url('../assets/tourism-wide.jpg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+  }
+
+  .iba:hover {
+    transform: scale(1.1);
+    animation: shake 0.5s cubic-bezier(.36, .07, .19, .97) infinite;
   }
 
   .ibb {
@@ -2042,16 +2193,29 @@ gap: 1px;
   }
 
   .ibc {
+    transition: transform 0.3s ease-in-out;
     background-image: url('../assets/uk.webp');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
   }
+
+  .ibc:hover {
+    transform: scale(1.1);
+    animation: shake 0.5s cubic-bezier(.36, .07, .19, .97) infinite;
+  }
+
   .ibd {
+    transition: transform 0.3s ease-in-out;
     background-image: url('../assets/paris-tower.jpg');
-   background-position: right;
+    background-position: right;
     background-repeat: no-repeat;
     background-size: cover;
+  }
+
+  .ibd:hover {
+    transform: scale(1.1);
+    animation: shake 0.5s cubic-bezier(.36, .07, .19, .97) infinite;
   }
 
   .ibe {
@@ -2060,18 +2224,31 @@ gap: 1px;
     background-repeat: no-repeat;
     background-size: cover;
   }
+
   .ibf {
+    transition: transform 0.3s ease-in-out;
     background-image: url('../assets/zuma-rock.jpeg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
   }
 
+  .ibf:hover {
+    transform: scale(1.1);
+    animation: shake 0.5s cubic-bezier(.36, .07, .19, .97) infinite;
+  }
+
   .ibg {
+    transition: transform 0.3s ease-in-out;
     background-image: url('../assets/wow.webp');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+  }
+
+  .ibg:hover {
+    transform: scale(1.1);
+    animation: shake 0.5s cubic-bezier(.36, .07, .19, .97) infinite;
   }
 
   .ibh {
@@ -2081,13 +2258,20 @@ gap: 1px;
     background-size: cover;
   }
 
- .ibi {
+  .ibi {
+    transition: transform 0.3s ease-in-out;
     background-image: url('../assets/tour.jpeg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
   }
-   .ground {
+
+  .ibi:hover {
+    transform: scale(1.1);
+    animation: shake 0.5s cubic-bezier(.36, .07, .19, .97) infinite;
+  }
+
+  .ground {
     width: 100%;
     height: 450px;
     background-color: white;
@@ -2126,21 +2310,24 @@ gap: 1px;
     justify-content: start;
     align-items: start;
   }
-  .gca{
-width: 200px;
-height: 120px;
-background-color: transparent;
-display: flex;
+
+  .gca {
+    width: 200px;
+    height: 120px;
+    background-color: transparent;
+    display: flex;
     flex-direction: column;
     justify-content: start;
     align-items: start;
   }
-.gca img{
-  position: relative;
-  right: 60px;
-  width: 250px;
-  height: auto;
-}
+
+  .gca img {
+    position: relative;
+    right: 60px;
+    width: 250px;
+    height: auto;
+  }
+
   .gd {
     width: 200px;
     height: 100px;
@@ -2238,11 +2425,11 @@ display: flex;
   .ga {
     width: 95%;
     height: 70px;
-   background-color: transparent;
-      border-top: 1.5px solid #f2c387;
+    background-color: transparent;
+    border-top: 1.5px solid #f2c387;
     color: black;
     font-size: 20px;
-    
+
     display: flex;
     flex-direction: column;
     justify-content: start;
@@ -2441,28 +2628,26 @@ display: flex;
     width: 600px;
     height: 70px;
     display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
+    flex-direction: row;
+    justify-content: center;
     align-items: center;
+    background-color: transparent;
   }
 
   .phone {
-    width: 590px;
+    width: 200px;
     height: 60px;
     display: flex;
     flex-direction: row;
     justify-content: center;
-    align-items: center;
+    align-items: start;
+    background-color: transparent;
   }
 
   .ph {
     width: 20px;
     height: 20px;
-    gap: 10px;
-    padding: 10px 16px;
-    position: relative;
-    top: 13px;
-    right: 140px;
+
   }
 
   .ph img {
@@ -2471,7 +2656,7 @@ display: flex;
   }
 
   .number {
-    width: 570px;
+    width: 180px;
     height: 40px;
     color: black;
     display: flex;
@@ -2479,10 +2664,10 @@ display: flex;
     justify-content: end;
     align-items: flex-start;
     font-family: 'Times New Roman', Times, serif;
-    font-size: 16px;
+    font-size: 17.5px;
     position: relative;
-    top: 5px;
-    right: 10px;
+    top: 25px;
+    right: 80px;
   }
 
   .mail {
@@ -2492,6 +2677,7 @@ display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    background-color: transparent;
   }
 
   .ema {
@@ -2499,9 +2685,7 @@ display: flex;
     height: 20px;
     gap: 10px;
     padding: 10px 16px;
-    position: relative;
-    top: 10px;
-    right: 190px;
+
   }
 
   .ema img {
@@ -2515,14 +2699,17 @@ display: flex;
     color: black;
     display: flex;
     flex-direction: column;
-    justify-content: end;
+    justify-content: center;
     align-items: flex-start;
     font-family: 'Times New Roman', Times, serif;
     font-size: 16px;
+    font-size: 17.5px;
     position: relative;
-    top: 3px;
-    right: 50px;
+    top: 25px;
+    right: 125px;
   }
+
+
 
   .bed {
     width: 100%;
@@ -2886,22 +3073,52 @@ display: flex;
   .ib {
     width: 100%;
     height: 650px;
-      
-  background-color: rgba(255, 255, 255, 0.781);
-  display: grid;
- grid-template-columns: 200px 1fr 200px;
- grid-template-rows: 200px 250px 200px;
 
-gap: 1px;
+    background-color: black;
+    display: grid;
+    grid-template-columns: 200px 1fr 200px;
+    grid-template-rows: 200px 250px 200px;
+
+    gap: 1px;
 
 
   }
 
+  @keyframes skake {
+    0% {
+      transform: translateX(0);
+    }
+
+    25% {
+      transform: translateX(-5px);
+    }
+
+    50% {
+      transform: translateX(5px);
+    }
+
+    75% {
+      transform: translateX(-5px);
+    }
+
+    100% {
+      transform: translateX(5px);
+    }
+  }
+
   .iba {
+    transition: transform 0.3s ease-in-out;
     background-image: url('../assets/tourism-wide.jpg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+  }
+
+  .iba:hover {
+    transform: scale(1.1);
+    animation: shake 0.5s cubic-bezier(.36, .07, .19, .97) infinite;
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.781);
   }
 
   .ibb {
@@ -2912,16 +3129,33 @@ gap: 1px;
   }
 
   .ibc {
+    transition: transform 0.3s ease-in-out;
     background-image: url('../assets/uk.webp');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
   }
+
+  .ibc:hover {
+    transform: scale(1.1);
+    animation: shake 0.5s cubic-bezier(.36, .07, .19, .97) infinite;
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.781);
+  }
+
   .ibd {
+    transition: transform 0.3s ease-in-out;
     background-image: url('../assets/paris-tower.jpg');
-   background-position: right;
+    background-position: right;
     background-repeat: no-repeat;
     background-size: cover;
+  }
+
+  .ibd:hover {
+    transform: scale(1.1);
+    animation: shake 0.5s cubic-bezier(.36, .07, .19, .97) infinite;
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.781);
   }
 
   .ibe {
@@ -2930,18 +3164,35 @@ gap: 1px;
     background-repeat: no-repeat;
     background-size: cover;
   }
+
   .ibf {
+    transition: transform 0.3s ease-in-out;
     background-image: url('../assets/zuma-rock.jpeg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
   }
 
+  .ibf:hover {
+    transform: scale(1.1);
+    animation: shake 0.5s cubic-bezier(.36, .07, .19, .97) infinite;
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.781);
+  }
+
   .ibg {
+    transition: transform 0.3s ease-in-out;
     background-image: url('../assets/wow.webp');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+  }
+
+  .ibg:hover {
+    transform: scale(1.1);
+    animation: shake 0.5s cubic-bezier(.36, .07, .19, .97) infinite;
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.781);
   }
 
   .ibh {
@@ -2951,13 +3202,22 @@ gap: 1px;
     background-size: cover;
   }
 
- .ibi {
+  .ibi {
+    transition: transform 0.3s ease-in-out;
     background-image: url('../assets/tour.jpeg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
   }
- .ground {
+
+  .ibi:hover {
+    transform: scale(1.1);
+    animation: shake 0.5s cubic-bezier(.36, .07, .19, .97) infinite;
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.781);
+  }
+
+  .ground {
     width: 100%;
     height: 350px;
     background-color: white;
@@ -2984,7 +3244,7 @@ gap: 1px;
     display: flex;
     flex-direction: column;
     justify-content: start;
-    align-items:start;
+    align-items: start;
   }
 
   .gc {
@@ -2996,25 +3256,28 @@ gap: 1px;
     justify-content: start;
     align-items: start;
   }
-.gca{
-  width: 250px;
-  height: 120px;
-  background-color: transparent;
-  display: flex;
-  flex-direction: column;
-  justify-content: start;
-  align-items: start;
-}
-.gca img{
-  width: 250px;
-  height: auto;
-}
+
+  .gca {
+    width: 250px;
+    height: 120px;
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+  }
+
+  .gca img {
+    width: 250px;
+    height: auto;
+  }
+
   .gd {
     width: 170px;
     height: 100px;
     background-color: transparent;
     display: flex;
-    flex-direction:row;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
     position: relative;
@@ -3091,7 +3354,7 @@ gap: 1px;
   }
 
   .gj {
-   width: 120px;
+    width: 120px;
     height: 50px;
     background-color: #f2c387;
     border: 1.5px solid black;
@@ -3113,11 +3376,11 @@ gap: 1px;
   .ga {
     width: 95%;
     height: 70px;
-     background-color: transparent;
-      border-top: 1.5px solid #f2c387;
+    background-color: transparent;
+    border-top: 1.5px solid #f2c387;
     color: black;
     font-size: 22px;
-    
+
     display: flex;
     flex-direction: column;
     justify-content: start;
@@ -3309,21 +3572,23 @@ gap: 1px;
   }
 
   .ac {
-    width: 600px;
+    width: 550px;
     height: 70px;
     display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
+    flex-direction: row;
+    justify-content: start;
     align-items: center;
+    background-color: transparent;
   }
 
   .phone {
-    width: 590px;
+    width: 200px;
     height: 60px;
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    background-color: transparent;
   }
 
   .ph {
@@ -3331,9 +3596,7 @@ gap: 1px;
     height: 20px;
     gap: 10px;
     padding: 10px 16px;
-    position: relative;
-    top: 13px;
-    right: -50px;
+
   }
 
   .ph img {
@@ -3342,7 +3605,7 @@ gap: 1px;
   }
 
   .number {
-    width: 570px;
+    width: 180px;
     height: 40px;
     color: black;
     display: flex;
@@ -3350,19 +3613,20 @@ gap: 1px;
     justify-content: end;
     align-items: flex-start;
     font-family: 'Times New Roman', Times, serif;
-    font-size: 16px;
+    font-size: 16.5px;
     position: relative;
-    top: 5px;
-    right: -40px;
+    top: 10px;
+    right: -50px;
   }
 
   .mail {
-    width: 290px;
+    width: 200px;
     height: 60px;
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    background-color: transparent;
   }
 
   .ema {
@@ -3381,7 +3645,7 @@ gap: 1px;
   }
 
   .google {
-    width: 260px;
+    width: 180px;
     height: 40px;
     color: black;
     display: flex;
@@ -3389,10 +3653,10 @@ gap: 1px;
     justify-content: end;
     align-items: flex-start;
     font-family: 'Times New Roman', Times, serif;
-    font-size: 16px;
+    font-size: 16.5px;
     position: relative;
-    top: 3px;
-    right: -30px;
+    top: 10px;
+    right: -5px;
   }
 
   .bed {
@@ -3757,22 +4021,52 @@ gap: 1px;
   .ib {
     width: 100%;
     height: 700px;
-     
-  background-color: rgba(255, 255, 255, 0.781);
-  display: grid;
- grid-template-columns: 200px 1fr 200px;
- grid-template-rows: 250px 230px 230px;
 
-gap: 1px;
+    background-color: black;
+    display: grid;
+    grid-template-columns: 200px 1fr 200px;
+    grid-template-rows: 250px 230px 230px;
+
+    gap: 1px;
 
 
   }
 
+  @keyframes skake {
+    0% {
+      transform: translateX(0);
+    }
+
+    25% {
+      transform: translateX(-5px);
+    }
+
+    50% {
+      transform: translateX(5px);
+    }
+
+    75% {
+      transform: translateX(-5px);
+    }
+
+    100% {
+      transform: translateX(5px);
+    }
+  }
+
   .iba {
+    transition: transform 0.3s ease-in-out;
     background-image: url('../assets/tourism-wide.jpg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+  }
+
+  .iba:hover {
+    transform: scale(1.1);
+    animation: shake 0.5s cubic-bezier(.36, .07, .19, .97) infinite;
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.781);
   }
 
   .ibb {
@@ -3783,16 +4077,33 @@ gap: 1px;
   }
 
   .ibc {
+    transition: transform 0.3s ease-in-out;
     background-image: url('../assets/uk.webp');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
   }
+
+  .ibc:hover {
+    transform: scale(1.1);
+    animation: shake 0.5s cubic-bezier(.36, .07, .19, .97) infinite;
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.781);
+  }
+
   .ibd {
+    transition: transform 0.3s ease-in-out;
     background-image: url('../assets/paris-tower.jpg');
-   background-position: right;
+    background-position: right;
     background-repeat: no-repeat;
     background-size: cover;
+  }
+
+  .ibd:hover {
+    transform: scale(1.1);
+    animation: shake 0.5s cubic-bezier(.36, .07, .19, .97) infinite;
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.781);
   }
 
   .ibe {
@@ -3801,18 +4112,35 @@ gap: 1px;
     background-repeat: no-repeat;
     background-size: cover;
   }
+
   .ibf {
+    transition: transform 0.3s ease-in-out;
     background-image: url('../assets/zuma-rock.jpeg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
   }
 
+  .ibf:hover {
+    transform: scale(1.1);
+    animation: shake 0.5s cubic-bezier(.36, .07, .19, .97) infinite;
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.781);
+  }
+
   .ibg {
+    transition: transform 0.3s ease-in-out;
     background-image: url('../assets/wow.webp');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+  }
+
+  .ibg:hover {
+    transform: scale(1.1);
+    animation: shake 0.5s cubic-bezier(.36, .07, .19, .97) infinite;
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.781);
   }
 
   .ibh {
@@ -3822,16 +4150,25 @@ gap: 1px;
     background-size: cover;
   }
 
- .ibi {
+  .ibi {
+    transition: transform 0.3s ease-in-out;
     background-image: url('../assets/tour.jpeg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
   }
-   .ground {
+
+  .ibi:hover {
+    transform: scale(1.1);
+    animation: shake 0.5s cubic-bezier(.36, .07, .19, .97) infinite;
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.781);
+  }
+
+  .ground {
     width: 100%;
     height: 430px;
-     background-color: white;
+    background-color: white;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -3867,7 +4204,8 @@ gap: 1px;
     justify-content: start;
     align-items: start;
   }
-  .gca{
+
+  .gca {
     width: 320px;
     height: 120px;
     background-color: transparent;
@@ -3876,7 +4214,8 @@ gap: 1px;
     justify-content: start;
     align-items: start;
   }
-  .gca img{
+
+  .gca img {
     position: relative;
     bottom: 10px;
     width: 270px;
@@ -3993,10 +4332,10 @@ gap: 1px;
     width: 95%;
     height: 70px;
     background-color: transparent;
-      border-top: 1.5px solid #f2c387;
+    border-top: 1.5px solid #f2c387;
     color: black;
     font-size: 22px;
-    
+
     display: flex;
     flex-direction: column;
     justify-content: start;
@@ -4196,21 +4535,23 @@ gap: 1px;
   }
 
   .ac {
-    width: 600px;
+    width: 400px;
     height: 70px;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
+    background-color: transparent;
   }
 
   .phone {
-    width: 310px;
+    width: 200px;
     height: 60px;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+    background-color: transparent;
   }
 
   .ph {
@@ -4237,19 +4578,20 @@ gap: 1px;
     justify-content: end;
     align-items: flex-start;
     font-family: 'Times New Roman', Times, serif;
-    font-size: 17px;
+    font-size: 17.5px;
     position: relative;
     top: 5px;
     left: 100px;
   }
 
   .mail {
-    width: 290px;
+    width: 200px;
     height: 60px;
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    background-color: transparent;
   }
 
   .ema {
@@ -4276,11 +4618,12 @@ gap: 1px;
     justify-content: end;
     align-items: flex-start;
     font-family: 'Times New Roman', Times, serif;
-    font-size: 17px;
+    font-size: 17.5px;
     position: relative;
     top: 5px;
-    left: 60px;
+    left: 20px;
   }
+
 
   .bed {
     width: 100%;
@@ -4539,6 +4882,7 @@ gap: 1px;
   .hc img {
     width: 300px;
     height: auto;
+
   }
 
   .hd {
@@ -4636,22 +4980,50 @@ gap: 1px;
   .ib {
     width: 100%;
     height: 700px;
-     
-  background-color: rgba(255, 255, 255, 0.781);
-  display: grid;
- grid-template-columns: 170px 1fr 200px;
- grid-template-rows: 200px 250px 250px ;
 
-gap: 1px;
+    background-color: black;
+    display: grid;
+    grid-template-columns: 170px 1fr 200px;
+    grid-template-rows: 200px 250px 250px;
 
+    gap: 1px;
+  }
 
+  @keyframes skake {
+    0% {
+      transform: translateX(0);
+    }
+
+    25% {
+      transform: translateX(-5px);
+    }
+
+    50% {
+      transform: translateX(5px);
+    }
+
+    75% {
+      transform: translateX(-5px);
+    }
+
+    100% {
+      transform: translateX(5px);
+    }
   }
 
   .iba {
+    transition: transform 0.3s ease-in-out;
     background-image: url('../assets/tourism-wide.jpg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+  }
+
+  .iba:hover {
+    transform: scale(1.1);
+    animation: shake 0.5s cubic-bezier(.36, .07, .19, .97) infinite;
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.781);
   }
 
   .ibb {
@@ -4659,19 +5031,37 @@ gap: 1px;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-   
-}
+
+  }
+
   .ibc {
+    transition: transform 0.3s ease-in-out;
     background-image: url('../assets/uk.webp');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
   }
+
+  .ibc:hover {
+    transform: scale(1.1);
+    animation: shake 0.5s cubic-bezier(.36, .07, .19, .97) infinite;
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.781);
+  }
+
   .ibd {
+    transition: transform 0.3s ease-in-out;
     background-image: url('../assets/paris-tower.jpg');
-   background-position: right;
+    background-position: right;
     background-repeat: no-repeat;
     background-size: cover;
+  }
+
+  .ibd:hover {
+    transform: scale(1.1);
+    animation: shake 0.5s cubic-bezier(.36, .07, .19, .97) infinite;
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.781);
   }
 
   .ibe {
@@ -4680,18 +5070,35 @@ gap: 1px;
     background-repeat: no-repeat;
     background-size: cover;
   }
+
   .ibf {
+    transition: transform 0.3s ease-in-out;
     background-image: url('../assets/zuma-rock.jpeg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
   }
 
+  .ibf:hover {
+    transform: scale(1.1);
+    animation: shake 0.5s cubic-bezier(.36, .07, .19, .97) infinite;
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.781);
+  }
+
   .ibg {
+    transition: transform 0.3s ease-in-out;
     background-image: url('../assets/wow.webp');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+  }
+
+  .ibg:hover {
+    transform: scale(1.1);
+    animation: shake 0.5s cubic-bezier(.36, .07, .19, .97) infinite;
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.781);
   }
 
   .ibh {
@@ -4702,12 +5109,21 @@ gap: 1px;
   }
 
   .ibi {
+    transition: transform 0.3s ease-in-out;
     background-image: url('../assets/tour.jpeg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
   }
- .ground {
+
+  .ibi:hover {
+    transform: scale(1.1);
+    animation: shake 0.5s cubic-bezier(.36, .07, .19, .97) infinite;
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.781);
+  }
+
+  .ground {
     width: 100%;
     height: 480px;
     background-color: white;
@@ -4746,23 +5162,26 @@ gap: 1px;
     justify-content: start;
     align-items: start;
   }
-.gca{
-width: 300px;
-height: 150px;
-background-color: transparent;
-display: flex;
-flex-direction: column;
-justify-content: start;
-align-items: start;
 
-}
-.gca img{
-  position: relative;
-  top: 10px;
-right: 7px;
-  width: 250px;
-  height: auto;
-}
+  .gca {
+    width: 300px;
+    height: 150px;
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+
+  }
+
+  .gca img {
+    position: relative;
+    top: 10px;
+    right: 7px;
+    width: 250px;
+    height: auto;
+  }
+
   .gd {
     width: 150px;
     height: 100px;
@@ -4772,8 +5191,8 @@ right: 7px;
     justify-content: start;
     align-items: start;
     position: relative;
-  left: 60px;
-  bottom: 30px;
+    left: 60px;
+    bottom: 30px;
   }
 
   .ge {
@@ -4822,12 +5241,23 @@ right: 7px;
     align-items: center;
     font-family: 'Times New Roman', Times, serif;
     color: black;
+    transition: transform 0.3s ease;
+  }
+
+  .gg:hover {
+    transform: scale(0.9);
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+    background-color: black;
+    border: 1.5px solid #f0b974;
+    color: white;
   }
 
   .gh {
     width: 250px;
     height: 250px;
-    background-color:transparent;
+    background-color: transparent;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -4856,7 +5286,7 @@ right: 7px;
     position: relative;
     left: 1px;
     bottom: 15px;
-     background-color: #f2c387;
+    background-color: #f2c387;
     border: 1.5px solid black;
     border-bottom-left-radius: 15px;
     border-bottom-right-radius: 15px;
@@ -4870,21 +5300,32 @@ right: 7px;
     align-items: center;
     font-family: 'Times New Roman', Times, serif;
     color: black;
+    transition: transform 0.3s ease;
+  }
+
+  .gj:hover {
+    transform: scale(0.9);
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+    background-color: black;
+    border: 1.5px solid #f0b974;
+    color: white;
   }
 
   .ga {
     width: 95%;
     height: 70px;
-  
+
     display: flex;
     flex-direction: column;
     justify-content: start;
     align-items: center;
-      background-color: transparent;
-      border-top: 1.5px solid #f2c387;
+    background-color: transparent;
+    border-top: 1.5px solid #f2c387;
     color: black;
     font-size: 22px;
-    
+
   }
 
   .gda {

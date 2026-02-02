@@ -1,12 +1,15 @@
 @media only screen and (max-width: 499px) {
-  html,body,#root {
-  margin: 0;
-  padding: 0;
-  height: 100%;
+
+  html,
+  body,
+  #root {
+    margin: 0;
+    padding: 0;
+    height: 100%;
     width: 100%;
     display: flex;
     flex-direction: column;
-   background-color: #f2c387;
+    background-color: #f2c387;
   }
 
   #holder {
@@ -216,7 +219,7 @@
   .bg {
     width: 150px;
     height: 50px;
-  background-color: rgba(255, 255, 255, 0.781);
+    background-color: rgba(255, 255, 255, 0.781);
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
     border-bottom-left-radius: 20px;
@@ -608,23 +611,26 @@
     justify-content: start;
     align-items: start;
   }
-.gca{
-  width: 300px;
-  height: 100px;
-  background-color: transparent;
-  display: flex;
+
+  .gca {
+    width: 300px;
+    height: 100px;
+    background-color: transparent;
+    display: flex;
     flex-direction: column;
     justify-content: start;
     align-items: start;
-   
-}
-.gca img {
-   position: relative;
+
+  }
+
+  .gca img {
+    position: relative;
     right: 60px;
     bottom: 10px;
-  width: 200px;
-  height: auto;
-}
+    width: 200px;
+    height: auto;
+  }
+
   .gda {
     width: 300px;
     height: 30px;
@@ -633,8 +639,8 @@
     flex-direction: row;
     justify-content: start;
     align-items: start;
-     position: relative;
-     top: 20px;
+    position: relative;
+    top: 20px;
     right: 40px;
   }
 
@@ -740,10 +746,10 @@
     width: 97%;
     height: 70px;
     background-color: transparent;
-      border-top: 1.5px solid #f2c387;
+    border-top: 1.5px solid #f2c387;
     color: black;
     font-size: 14px;
-    
+
     display: flex;
     flex-direction: column;
     justify-content: start;
@@ -752,10 +758,13 @@
 }
 
 @media only screen and (min-width: 500px) {
-  html,body,#root {
-  margin: 0;
-  padding: 0;
-  height: 100%;
+
+  html,
+  body,
+  #root {
+    margin: 0;
+    padding: 0;
+    height: 100%;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -969,7 +978,7 @@
   .bg {
     width: 150px;
     height: 50px;
-  background-color: rgba(255, 255, 255, 0.781);
+    background-color: rgba(255, 255, 255, 0.781);
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
     border-bottom-left-radius: 20px;
@@ -1021,7 +1030,7 @@
   .c {
     width: 100%;
     height: 980px;
-   background-color: #f0b974;
+    background-color: #f0b974;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -1361,23 +1370,26 @@
     justify-content: start;
     align-items: start;
   }
-.gca{
-  width: 300px;
-  height: 100px;
-  background-color: transparent;
-  display: flex;
+
+  .gca {
+    width: 300px;
+    height: 100px;
+    background-color: transparent;
+    display: flex;
     flex-direction: column;
     justify-content: start;
     align-items: start;
-   
-}
-.gca img {
-   position: relative;
+
+  }
+
+  .gca img {
+    position: relative;
     right: 120px;
     bottom: 10px;
-  width: 200px;
-  height: auto;
-}
+    width: 200px;
+    height: auto;
+  }
+
   .gda {
     width: 300px;
     height: 30px;
@@ -1386,8 +1398,8 @@
     flex-direction: row;
     justify-content: start;
     align-items: start;
-     position: relative;
-     top: 20px;
+    position: relative;
+    top: 20px;
     right: 100px;
   }
 
@@ -1493,10 +1505,10 @@
     width: 97%;
     height: 70px;
     background-color: transparent;
-      border-top: 1.5px solid #f2c387;
+    border-top: 1.5px solid #f2c387;
     color: black;
     font-size: 17px;
-    
+
     display: flex;
     flex-direction: column;
     justify-content: start;
@@ -1505,11 +1517,14 @@
 }
 
 @media only screen and (min-width: 768px) {
-  html,body,#root {
-  margin: 0;
-  padding: 0;
-  height: 100%;
-  width: 100%;
+
+  html,
+  body,
+  #root {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
     display: flex;
     flex-direction: column;
     background-color: #f2c387;
@@ -1686,31 +1701,29 @@
   }
 
   .ac {
-    width: 600px;
+    width: 500px;
     height: 70px;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    background-color: transparent;
     justify-content: space-evenly;
     align-items: center;
   }
 
   .phone {
-    width: 590px;
+    width: 200px;
     height: 60px;
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    background-color: transparent;
   }
 
   .ph {
     width: 20px;
     height: 20px;
     gap: 10px;
-    padding: 10px 16px;
-    position: relative;
-    top: 13px;
-    right: 140px;
   }
 
   .ph img {
@@ -1719,7 +1732,7 @@
   }
 
   .number {
-    width: 570px;
+    width: 170px;
     height: 40px;
     color: black;
     display: flex;
@@ -1727,10 +1740,10 @@
     justify-content: end;
     align-items: flex-start;
     font-family: 'Times New Roman', Times, serif;
-    font-size: 16px;
+    font-size: 14px;
     position: relative;
-    top: 5px;
-    right: 110px;
+    top: 15px;
+    right: 125px;
   }
 
   .mail {
@@ -1746,10 +1759,7 @@
     width: 20px;
     height: 20px;
     gap: 10px;
-    padding: 10px 16px;
-    position: relative;
-    top: 10px;
-    right: 190px;
+
   }
 
   .ema img {
@@ -1766,10 +1776,10 @@
     justify-content: end;
     align-items: flex-start;
     font-family: 'Times New Roman', Times, serif;
-    font-size: 16px;
+    font-size: 14px;
     position: relative;
-    top: 3px;
-    right: 170px;
+    top: 15px;
+    right: 200px;
   }
 
   .bed {
@@ -1813,14 +1823,14 @@
     background-color: transparent;
     display: flex;
     flex-direction: row;
-    justify-content:center;
+    justify-content: center;
     align-items: center;
   }
 
   .bba {
     width: 200px;
     height: 100px;
-background-color: transparent;
+    background-color: transparent;
     display: flex;
     flex-direction: column;
     justify-content: start;
@@ -1851,7 +1861,7 @@ background-color: transparent;
     font-size: 25px;
     z-index: 1;
     position: relative;
-   left: -45px;
+    left: -45px;
     top: 20px;
   }
 
@@ -1895,7 +1905,7 @@ background-color: transparent;
   .bf {
     width: 220px;
     height: 60px;
-   background-color: rgba(255, 255, 255, 0.781);
+    background-color: rgba(255, 255, 255, 0.781);
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
     border-bottom-left-radius: 20px;
@@ -1916,7 +1926,7 @@ background-color: transparent;
   .bg {
     width: 220px;
     height: 60px;
-  background-color: rgba(255, 255, 255, 0.781);
+    background-color: rgba(255, 255, 255, 0.781);
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
     border-bottom-left-radius: 20px;
@@ -1937,7 +1947,7 @@ background-color: transparent;
   .bh {
     width: 220px;
     height: 60px;
-  background-color: rgba(255, 255, 255, 0.781);
+    background-color: rgba(255, 255, 255, 0.781);
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
     border-bottom-left-radius: 20px;
@@ -1967,7 +1977,7 @@ background-color: transparent;
   .c {
     width: 100%;
     height: 550px;
-   background-color: #f0b974;
+    background-color: #f0b974;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
@@ -2236,7 +2246,7 @@ background-color: transparent;
   .f {
     width: 100%;
     height: 550px;
-   background-color: #f0b974;
+    background-color: #f0b974;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -2306,21 +2316,24 @@ background-color: transparent;
     justify-content: start;
     align-items: start;
   }
-  .gca{
-width: 200px;
-height: 120px;
-background-color: transparent;
-display: flex;
+
+  .gca {
+    width: 200px;
+    height: 120px;
+    background-color: transparent;
+    display: flex;
     flex-direction: column;
     justify-content: start;
     align-items: start;
   }
-.gca img{
-  position: relative;
-  right: 60px;
-  width: 250px;
-  height: auto;
-}
+
+  .gca img {
+    position: relative;
+    right: 60px;
+    width: 250px;
+    height: auto;
+  }
+
   .gd {
     width: 200px;
     height: 100px;
@@ -2418,11 +2431,11 @@ display: flex;
   .ga {
     width: 95%;
     height: 70px;
-   background-color: transparent;
-      border-top: 1.5px solid #f2c387;
+    background-color: transparent;
+    border-top: 1.5px solid #f2c387;
     color: black;
     font-size: 20px;
-    
+
     display: flex;
     flex-direction: column;
     justify-content: start;
@@ -2435,18 +2448,21 @@ display: flex;
 }
 
 @media only screen and (min-width: 930px) {
-  html,body,#root {
-  margin: 0;
-  padding: 0;
-  height: 100%;
-  width: 100%;
-     display: flex;
+
+  html,
+  body,
+  #root {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
     flex-direction: column;
-   background-color: #f2c387;
+    background-color: #f2c387;
   }
 
   #holder {
-   background-color: #f2c387;
+    background-color: #f2c387;
     min-height: 100vh;
   }
 
@@ -2619,28 +2635,26 @@ display: flex;
     width: 600px;
     height: 70px;
     display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
+    flex-direction: row;
+    justify-content: center;
     align-items: center;
+    background-color: transparent;
   }
 
   .phone {
-    width: 590px;
+    width: 200px;
     height: 60px;
     display: flex;
     flex-direction: row;
     justify-content: center;
-    align-items: center;
+    align-items: start;
+    background-color: transparent;
   }
 
   .ph {
     width: 20px;
     height: 20px;
-    gap: 10px;
-    padding: 10px 16px;
-    position: relative;
-    top: 13px;
-    right: 140px;
+
   }
 
   .ph img {
@@ -2649,7 +2663,7 @@ display: flex;
   }
 
   .number {
-    width: 570px;
+    width: 180px;
     height: 40px;
     color: black;
     display: flex;
@@ -2657,10 +2671,10 @@ display: flex;
     justify-content: end;
     align-items: flex-start;
     font-family: 'Times New Roman', Times, serif;
-    font-size: 16px;
+    font-size: 17.5px;
     position: relative;
-    top: 5px;
-    right: 10px;
+    top: 25px;
+    right: 80px;
   }
 
   .mail {
@@ -2670,6 +2684,7 @@ display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    background-color: transparent;
   }
 
   .ema {
@@ -2677,9 +2692,7 @@ display: flex;
     height: 20px;
     gap: 10px;
     padding: 10px 16px;
-    position: relative;
-    top: 10px;
-    right: 190px;
+
   }
 
   .ema img {
@@ -2693,13 +2706,14 @@ display: flex;
     color: black;
     display: flex;
     flex-direction: column;
-    justify-content: end;
+    justify-content: center;
     align-items: flex-start;
     font-family: 'Times New Roman', Times, serif;
     font-size: 16px;
+    font-size: 17.5px;
     position: relative;
-    top: 3px;
-    right: 50px;
+    top: 25px;
+    right: 125px;
   }
 
   .bed {
@@ -2750,7 +2764,7 @@ display: flex;
   .bba {
     width: 200px;
     height: 100px;
-background-color: transparent;
+    background-color: transparent;
     display: flex;
     flex-direction: column;
     justify-content: start;
@@ -2770,7 +2784,7 @@ background-color: transparent;
   .bbb {
     width: 600px;
     height: 100px;
-    background-color:transparent;
+    background-color: transparent;
     color: white;
     font-family: 'Times New Roman', Times, serif;
     display: flex;
@@ -2780,7 +2794,7 @@ background-color: transparent;
     font-weight: lighter;
     font-size: 25px;
     position: relative;
-  left: -90px;
+    left: -90px;
     top: 20px;
   }
 
@@ -2824,7 +2838,7 @@ background-color: transparent;
   .bf {
     width: 220px;
     height: 60px;
-   background-color: rgba(255, 255, 255, 0.781);
+    background-color: rgba(255, 255, 255, 0.781);
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
     border-bottom-left-radius: 20px;
@@ -2845,7 +2859,7 @@ background-color: transparent;
   .bg {
     width: 220px;
     height: 60px;
-   background-color: rgba(255, 255, 255, 0.781);
+    background-color: rgba(255, 255, 255, 0.781);
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
     border-bottom-left-radius: 20px;
@@ -2866,7 +2880,7 @@ background-color: transparent;
   .bh {
     width: 220px;
     height: 60px;
-   background-color: rgba(255, 255, 255, 0.781);
+    background-color: rgba(255, 255, 255, 0.781);
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
     border-bottom-left-radius: 20px;
@@ -2896,7 +2910,7 @@ background-color: transparent;
   .c {
     width: 100%;
     height: 550px;
-  background-color: #f0b974;
+    background-color: #f0b974;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
@@ -3009,7 +3023,7 @@ background-color: transparent;
     font-family: 'Times New Roman', Times, serif;
     font-weight: bold;
     text-align: center;
-    font-size:13px;
+    font-size: 13px;
     display: flex;
     flex-direction: column;
     justify-content: start;
@@ -3165,7 +3179,7 @@ background-color: transparent;
   .f {
     width: 100%;
     height: 550px;
-   background-color: #f0b974;
+    background-color: #f0b974;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -3223,7 +3237,7 @@ background-color: transparent;
     display: flex;
     flex-direction: column;
     justify-content: start;
-    align-items:start;
+    align-items: start;
   }
 
   .gc {
@@ -3235,25 +3249,28 @@ background-color: transparent;
     justify-content: start;
     align-items: start;
   }
-.gca{
-  width: 250px;
-  height: 120px;
-  background-color: transparent;
-  display: flex;
-  flex-direction: column;
-  justify-content: start;
-  align-items: start;
-}
-.gca img{
-  width: 250px;
-  height: auto;
-}
+
+  .gca {
+    width: 250px;
+    height: 120px;
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+  }
+
+  .gca img {
+    width: 250px;
+    height: auto;
+  }
+
   .gd {
     width: 170px;
     height: 100px;
     background-color: transparent;
     display: flex;
-    flex-direction:row;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
     position: relative;
@@ -3330,7 +3347,7 @@ background-color: transparent;
   }
 
   .gj {
-   width: 120px;
+    width: 120px;
     height: 50px;
     background-color: #f2c387;
     border: 1.5px solid black;
@@ -3352,11 +3369,11 @@ background-color: transparent;
   .ga {
     width: 95%;
     height: 70px;
-     background-color: transparent;
-      border-top: 1.5px solid #f2c387;
+    background-color: transparent;
+    border-top: 1.5px solid #f2c387;
     color: black;
     font-size: 22px;
-    
+
     display: flex;
     flex-direction: column;
     justify-content: start;
@@ -3369,18 +3386,21 @@ background-color: transparent;
 }
 
 @media only screen and (min-width: 1024px) {
-html,body,#root {
-  margin: 0;
-  padding: 0;
-  height: 100%;
-  width: 100%;
+
+  html,
+  body,
+  #root {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
     display: flex;
     flex-direction: column;
-   background-color: #f2c387;
+    background-color: #f2c387;
   }
 
   #holder {
-   background-color: #f2c387;
+    background-color: #f2c387;
     min-height: 100vh;
   }
 
@@ -3546,21 +3566,23 @@ html,body,#root {
   }
 
   .ac {
-    width: 600px;
+    width: 550px;
     height: 70px;
     display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
+    flex-direction: row;
+    justify-content: start;
     align-items: center;
+    background-color: transparent;
   }
 
   .phone {
-    width: 590px;
+    width: 200px;
     height: 60px;
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    background-color: transparent;
   }
 
   .ph {
@@ -3568,9 +3590,7 @@ html,body,#root {
     height: 20px;
     gap: 10px;
     padding: 10px 16px;
-    position: relative;
-    top: 13px;
-    right: -50px;
+
   }
 
   .ph img {
@@ -3579,7 +3599,7 @@ html,body,#root {
   }
 
   .number {
-    width: 570px;
+    width: 180px;
     height: 40px;
     color: black;
     display: flex;
@@ -3587,19 +3607,20 @@ html,body,#root {
     justify-content: end;
     align-items: flex-start;
     font-family: 'Times New Roman', Times, serif;
-    font-size: 16px;
+    font-size: 16.5px;
     position: relative;
-    top: 5px;
-    right: -40px;
+    top: 10px;
+    right: -50px;
   }
 
   .mail {
-    width: 290px;
+    width: 200px;
     height: 60px;
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    background-color: transparent;
   }
 
   .ema {
@@ -3618,7 +3639,7 @@ html,body,#root {
   }
 
   .google {
-    width: 260px;
+    width: 180px;
     height: 40px;
     color: black;
     display: flex;
@@ -3626,10 +3647,10 @@ html,body,#root {
     justify-content: end;
     align-items: flex-start;
     font-family: 'Times New Roman', Times, serif;
-    font-size: 16px;
+    font-size: 16.5px;
     position: relative;
-    top: 3px;
-    right: -30px;
+    top: 10px;
+    right: -5px;
   }
 
   .bed {
@@ -3680,7 +3701,7 @@ html,body,#root {
   .bba {
     width: 200px;
     height: 100px;
-background-color: transparent;
+    background-color: transparent;
     display: flex;
     flex-direction: column;
     justify-content: start;
@@ -3755,7 +3776,7 @@ background-color: transparent;
   .bf {
     width: 220px;
     height: 60px;
-   background-color: rgba(255, 255, 255, 0.781);
+    background-color: rgba(255, 255, 255, 0.781);
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
     border-bottom-left-radius: 20px;
@@ -3797,7 +3818,7 @@ background-color: transparent;
   .bh {
     width: 220px;
     height: 60px;
-  background-color: rgba(255, 255, 255, 0.781);
+    background-color: rgba(255, 255, 255, 0.781);
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
     border-bottom-left-radius: 20px;
@@ -3818,7 +3839,7 @@ background-color: transparent;
   .center {
     width: 100%;
     height: 550px;
-   background-color: #f0b974;
+    background-color: #f0b974;
     display: flex;
     flex-direction: column;
     align-items: start;
@@ -4130,7 +4151,7 @@ background-color: transparent;
   .ground {
     width: 100%;
     height: 430px;
-     background-color: white;
+    background-color: white;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -4166,7 +4187,8 @@ background-color: transparent;
     justify-content: start;
     align-items: start;
   }
-  .gca{
+
+  .gca {
     width: 320px;
     height: 120px;
     background-color: transparent;
@@ -4175,7 +4197,8 @@ background-color: transparent;
     justify-content: start;
     align-items: start;
   }
-  .gca img{
+
+  .gca img {
     position: relative;
     bottom: 10px;
     width: 270px;
@@ -4292,10 +4315,10 @@ background-color: transparent;
     width: 95%;
     height: 70px;
     background-color: transparent;
-      border-top: 1.5px solid #f2c387;
+    border-top: 1.5px solid #f2c387;
     color: black;
     font-size: 22px;
-    
+
     display: flex;
     flex-direction: column;
     justify-content: start;
@@ -4308,18 +4331,21 @@ background-color: transparent;
 }
 
 @media only screen and (min-width: 1230px) {
-  html,body,#root {
-  margin: 0;
-  padding: 0;
-  height: 100%;
-  width: 100%;
+
+  html,
+  body,
+  #root {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
     display: flex;
     flex-direction: column;
     background-color: #f2c387;
   }
 
   #holder {
-   background-color: #f2c387;
+    background-color: #f2c387;
     min-height: 100vh;
   }
 
@@ -4493,21 +4519,23 @@ background-color: transparent;
   }
 
   .ac {
-    width: 600px;
+    width: 400px;
     height: 70px;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
+    background-color: transparent;
   }
 
   .phone {
-    width: 310px;
+    width: 200px;
     height: 60px;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+    background-color: transparent;
   }
 
   .ph {
@@ -4534,19 +4562,20 @@ background-color: transparent;
     justify-content: end;
     align-items: flex-start;
     font-family: 'Times New Roman', Times, serif;
-    font-size: 17px;
+    font-size: 17.5px;
     position: relative;
     top: 5px;
     left: 100px;
   }
 
   .mail {
-    width: 290px;
+    width: 200px;
     height: 60px;
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    background-color: transparent;
   }
 
   .ema {
@@ -4573,10 +4602,10 @@ background-color: transparent;
     justify-content: end;
     align-items: flex-start;
     font-family: 'Times New Roman', Times, serif;
-    font-size: 17px;
+    font-size: 17.5px;
     position: relative;
     top: 5px;
-   left: 60px;
+    left: 20px;
   }
 
   .bed {
@@ -4717,7 +4746,7 @@ background-color: transparent;
 
     width: 400px;
     height: 60px;
-   background-color: rgba(255, 255, 255, 0.781);
+    background-color: rgba(255, 255, 255, 0.781);
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
     border-bottom-left-radius: 20px;
@@ -4757,7 +4786,7 @@ background-color: transparent;
   .center {
     width: 100%;
     height: 600px;
-   background-color: #f0b974;
+    background-color: #f0b974;
     display: flex;
     flex-direction: column;
     align-items: start;
@@ -4767,7 +4796,7 @@ background-color: transparent;
   .c {
     width: 100%;
     height: 550px;
-   background-color: transparent;
+    background-color: transparent;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
@@ -5107,23 +5136,26 @@ background-color: transparent;
     justify-content: start;
     align-items: start;
   }
-.gca{
-width: 300px;
-height: 150px;
-background-color: transparent;
-display: flex;
-flex-direction: column;
-justify-content: start;
-align-items: start;
 
-}
-.gca img{
-  position: relative;
-  top: 10px;
-right: 7px;
-  width: 250px;
-  height: auto;
-}
+  .gca {
+    width: 300px;
+    height: 150px;
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+
+  }
+
+  .gca img {
+    position: relative;
+    top: 10px;
+    right: 7px;
+    width: 250px;
+    height: auto;
+  }
+
   .gd {
     width: 150px;
     height: 100px;
@@ -5133,8 +5165,8 @@ right: 7px;
     justify-content: start;
     align-items: start;
     position: relative;
-  left: 60px;
-  bottom: 30px;
+    left: 60px;
+    bottom: 30px;
   }
 
   .ge {
@@ -5183,12 +5215,22 @@ right: 7px;
     align-items: center;
     font-family: 'Times New Roman', Times, serif;
     color: black;
+  transition: transform 0.3s ease;
   }
+.gg:hover{
+  transform: scale(0.9);
+  font-size: 16px;
+  font-weight: bold;
+  text-decoration: none;
+  background-color: black;
+  border: 1.5px solid #f0b974;
+  color: white;
+}
 
   .gh {
     width: 250px;
     height: 250px;
-    background-color:transparent;
+    background-color: transparent;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -5217,7 +5259,7 @@ right: 7px;
     position: relative;
     left: 1px;
     bottom: 15px;
-     background-color: #f2c387;
+    background-color: #f2c387;
     border: 1.5px solid black;
     border-bottom-left-radius: 15px;
     border-bottom-right-radius: 15px;
@@ -5231,21 +5273,30 @@ right: 7px;
     align-items: center;
     font-family: 'Times New Roman', Times, serif;
     color: black;
+    transition: transform 0.3s ease;
   }
-
+.gj:hover{
+  transform: scale(0.9);
+  font-size: 16px;
+  font-weight: bold;
+  text-decoration: none;
+  background-color: black;
+  border: 1.5px solid #f0b974;
+  color: white;
+}
   .ga {
     width: 95%;
     height: 70px;
-  
+
     display: flex;
     flex-direction: column;
     justify-content: start;
     align-items: center;
-      background-color: transparent;
-      border-top: 1.5px solid #f2c387;
+    background-color: transparent;
+    border-top: 1.5px solid #f2c387;
     color: black;
     font-size: 22px;
-    
+
   }
 
   .gda {
