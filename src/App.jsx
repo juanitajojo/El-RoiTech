@@ -38,7 +38,7 @@ export default function App() {
                       <a href="https://facebook.com/nhillzglobal" target="_blank" rel="noopener noreferrer">
                         <button id="fb" onClick={() => confirm("Redirecting to Facebook")}><img src={icon} alt="Facebook.com" /></button>
                       </a>
-                      <a href="https://www.instagram.com/bimboademoye?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" rel="noopener noreferrer">
+                      <a href="https://www.instagram.com/nhillzglobal" target="_blank" rel="noopener noreferrer">
                         <button id="ig" onClick={() => confirm("Redirecting to Instagram")}><img src={instagram} alt="Instagram.com" /></button>
                       </a>
                       <a href="https://x.com/nhillzglobal" target="_blank" rel="noopener noreferrer">
