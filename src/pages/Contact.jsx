@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import emailjs from "@emailjs/browser";
-import { useRef } from "react";
+import { useRef, useState } from "react";
 import logo from "../assets/nhillz-logo.png";
 import icon from "../assets/facebook-icon.png";
 import instagram from "../assets/instagram-logo.png";
@@ -15,13 +15,15 @@ import './Contact.css'
 
 
 export default function Contact() {
+    const [loading, setLoading] = useState(false)
+
     const formRef = useRef();
 
     const sendEmail = (e) => {
         e.preventDefault();
-
+        setLoading(true);
         emailjs.sendForm(
-            "service_c8zlqcc",
+            "service_odhej7s",
             "template_mhmme5f",
             formRef.current,
             "IOHWOLPnNLLD6aZ1K"
@@ -29,10 +31,17 @@ export default function Contact() {
             .then((result) => {
                 console.log(result.text);
                 alert("Message sent successfully!");
-            }, (error) => {
-                console.log(error.text);
-                alert("Failed to send message.");
-            });
+                setLoading(false);
+                formRef.current.reset();
+
+            },
+                (error) => {
+                    console.log(error.text);
+                    alert("Failed to send message.");
+                    setLoading(false);
+
+                }
+            );
     };
     return (
         <>
@@ -154,7 +163,8 @@ export default function Contact() {
                                     </div>
                                     <br />
                                     <div className="jl">
-                                        <button className="jla" type="submit">Submit Enquiry</button>
+                                        <button className="jla" type="submit" disabled={loading}>
+                                            {loading ? "Sending..." : "Submit Enquiry"} </button>
                                     </div>
 
                                 </form>
@@ -231,7 +241,7 @@ export default function Contact() {
 
                     <div className="ga">
                         <h5>
-                           &copy; 2026 All Rights Reserved. Brought to you by <b>El-Roi Tech</b>
+                            &copy; 2026 All Rights Reserved. Brought to you by <b>El-Roi Tech</b>
                         </h5>
                     </div>
                 </footer>
